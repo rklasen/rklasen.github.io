@@ -134,7 +134,7 @@ Designed with Inkscape, size made to match a 10cm x 15cm photo paper. Nothing fa
 
 # Enclosure
 
-Thime to show off my awesome carpentry skills with an askew plywood box.
+Time to show off my awesome carpentry skills with an askew plywood box.
 
 ![](img/box-front.jpg)
 ![](img/rear.jpg)

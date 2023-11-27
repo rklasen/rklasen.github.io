@@ -4,6 +4,7 @@ date: 2021-10-07T17:06:57+02:00
 draft: false
 summary: "When too much power is just to much power."
 tags: [Arduino, Electronics]
+math: true
 toc:
   enable: true
   auto: true
@@ -11,6 +12,18 @@ cover:
   src: img/box.jpg
   caption: My new dual-outlet inrush current limiter.
 ---
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
 
 # Preamble
 
@@ -26,11 +39,11 @@ But those are switch mode power supplies. This here is a linear power supply. Si
 
 That means if you want 5 volts out, 35 volts have to be "removed" by this transistor. For small currents that is not actually a problem (and is still commonly done this way), but for large currents this wastes a lof of energy, because the dissipated energy is voltage times current:
 
-$$P = U \cdot I$$
+$P = U \cdot I$
 
 That means two things:
 
-- If you want a low output voltage but large output current, _a log_ of power ist wasted (dissipated in the transistor)
+- If you want a low output voltage but large output current, _a lot_ of power ist wasted (dissipated in the transistor)
 - The transformer that supplies $$V_in$$ for this "voltage divider" has to be huge.
 
 How huge? Well, see for yourself:
