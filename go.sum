@@ -1,0 +1,4 @@
+github.com/schnerring/hugo-mod-json-resume v0.0.0-20231123180556-b8c687457cc0 h1:JX8IembPNazIInVyc0Hivq4Ao2tJMebNPCr9udXji7k=
+github.com/schnerring/hugo-mod-json-resume v0.0.0-20231123180556-b8c687457cc0/go.mod h1:s6HEQq5n6D9UWK2ucmu+XLW6BH1nW6DvAXV4T4g8fPY=
+github.com/schnerring/hugo-theme-gruvbox v0.0.0-20231125162105-3e342e6663f1 h1:T1nherz7LXHTeGm8gthVytfKuIgNCHpzCPg495uw1iI=
+github.com/schnerring/hugo-theme-gruvbox v0.0.0-20231125162105-3e342e6663f1/go.mod h1:ZEP0AB4v1k845Jmx9XmOY39CuR7Zud/owFh8wRGgeZg=

@@ -1,0 +1,68 @@
+{
+  "comments": {
+    "dependencies": {
+      "@tabler/icons": "github.com/schnerring/hugo-theme-gruvbox",
+      "flexsearch": "github.com/schnerring/hugo-theme-gruvbox",
+      "normalize.css": "github.com/schnerring/hugo-theme-gruvbox",
+      "prism-themes": "github.com/schnerring/hugo-theme-gruvbox",
+      "prismjs": "github.com/schnerring/hugo-theme-gruvbox",
+      "simple-icons": "github.com/schnerring/hugo-mod-json-resume",
+      "typeface-fira-code": "github.com/schnerring/hugo-theme-gruvbox",
+      "typeface-roboto-slab": "github.com/schnerring/hugo-theme-gruvbox"
+    },
+    "devDependencies": {
+      "@fullhuman/postcss-purgecss": "github.com/schnerring/hugo-theme-gruvbox",
+      "cssnano": "github.com/schnerring/hugo-theme-gruvbox",
+      "eslint": "github.com/schnerring/hugo-theme-gruvbox",
+      "eslint-config-prettier": "github.com/schnerring/hugo-theme-gruvbox",
+      "eslint-plugin-prettier": "github.com/schnerring/hugo-theme-gruvbox",
+      "husky": "github.com/schnerring/hugo-theme-gruvbox",
+      "lint-staged": "github.com/schnerring/hugo-theme-gruvbox",
+      "markdownlint-cli": "github.com/schnerring/hugo-theme-gruvbox",
+      "postcss": "github.com/schnerring/hugo-theme-gruvbox",
+      "postcss-cli": "github.com/schnerring/hugo-theme-gruvbox",
+      "postcss-custom-media": "github.com/schnerring/hugo-theme-gruvbox",
+      "postcss-import": "github.com/schnerring/hugo-theme-gruvbox",
+      "postcss-nesting": "github.com/schnerring/hugo-theme-gruvbox",
+      "postcss-preset-env": "github.com/schnerring/hugo-theme-gruvbox",
+      "postcss-url": "github.com/schnerring/hugo-theme-gruvbox",
+      "prettier": "github.com/schnerring/hugo-theme-gruvbox",
+      "prettier-plugin-go-template": "github.com/schnerring/hugo-theme-gruvbox",
+      "stylelint": "github.com/schnerring/hugo-theme-gruvbox",
+      "stylelint-prettier": "github.com/schnerring/hugo-theme-gruvbox"
+    }
+  },
+  "dependencies": {
+    "@tabler/icons": "^2.42.0",
+    "flexsearch": "^0.7.31",
+    "normalize.css": "^8.0.1",
+    "prism-themes": "^1.9.0",
+    "prismjs": "^1.29.0",
+    "simple-icons": "^9.21.0",
+    "typeface-fira-code": "^1.1.13",
+    "typeface-roboto-slab": "^1.1.13"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "cssnano": "^6.0.1",
+    "eslint": "^8.54.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.1.0",
+    "markdownlint-cli": "^0.37.0",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "postcss-custom-media": "^10.0.2",
+    "postcss-import": "^15.1.0",
+    "postcss-nesting": "^12.0.1",
+    "postcss-preset-env": "^9.3.0",
+    "postcss-url": "^10.1.3",
+    "prettier": "^3.1.0",
+    "prettier-plugin-go-template": "^0.0.15",
+    "stylelint": "^15.11.0",
+    "stylelint-prettier": "^4.1.0"
+  },
+  "name": "romanklasen.com",
+  "version": "0.1.0"
+}

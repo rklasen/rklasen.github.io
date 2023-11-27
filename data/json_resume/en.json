@@ -1,0 +1,15 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Roman Klasen",
+    "label": "not actual picture",
+    
+    "summary": "Particle physicist turned software developer.",
+    "profiles": [
+      {
+        "network": "GitHub",
+        "url": "https://github.com/rklasen"
+      }
+    ]
+  }
+}
