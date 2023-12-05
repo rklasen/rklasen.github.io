@@ -12,7 +12,7 @@ featuredImagePreview: "new-PXL_20220325_072404598.jpg"
 linkToMarkdown: true
 ---
 
-Why buy something that works when you can build it yourself fot twice the price?
+Why buy something that works when you can build it yourself for twice the price?
 
 ## First manual attempt
 
