@@ -1,0 +1,32 @@
+{{ if .Params.katex }}
+  {{ $katexCSS := resources.Get "katex/dist/katex.min.css" }}
+  <link
+    rel="stylesheet"
+    href="{{ $katexCSS }}"
+    {{ if hugo.IsProduction }}
+      integrity="{{ $katexCSS.Data.Integrity }}"
+    {{ end }}
+    crossorigin="anonymous"
+  />
+
+  {{ $katexJS := resources.Get "katex/dist/katex.min.js" }}
+  <script
+    defer
+    src="{{ $katexJS.RelPermalink }}"
+    {{ if hugo.IsProduction }}
+      integrity="{{ $katexJS.Data.Integrity }}"
+    {{ end }}
+    crossorigin="anonymous"
+  ></script>
+
+  {{ $autoRender := resources.Get "katex/dist/contrib/auto-render.min.js" }}
+  <script
+    defer
+    src="{{ $autoRender.RelPermalink }}"
+    {{ if hugo.IsProduction }}
+      integrity="{{ $autoRender.Data.Integrity }}"
+    {{ end }}
+    crossorigin="anonymous"
+    onload="renderMathInElement(document.body);"
+  ></script>
+{{ end }}
