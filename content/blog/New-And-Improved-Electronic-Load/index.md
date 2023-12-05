@@ -6,8 +6,8 @@ summary: "Configurable Electronic Load - now improved and much less dubious!"
 tags: [Arduino, Electronics, SSD1306, ElectronicLoad]
 toc: true
 cover:
-    src: img/box-front.jpg
-    caption: This thing dissipates electrical energy. Let's hope it doesn't catch fire.
+  src: img/box-front.jpg
+  caption: This thing dissipates electrical energy. Let's hope it doesn't catch fire.
 ---
 
 # Preamble
@@ -18,11 +18,15 @@ Granted, you can simply buy those. But the times when I actually needed one were
 
 After all, all you need is some power dissipating element like a resistor. Okay, ideally I'd like to set how much power should be dissipated, so a transistor is more appropriate. You can adjust the current that should go through it (let's say collector to emitter) by the current you put into it's base (thats pretty much what transistors are for).
 
-You could measure this collector-emitter current somehow with a current sensing resistor, and adjust the base current so that your desired current flows. A micro controller should be just fine for that. Doesn't sound too complicated. I'm sure I will not have to eat those words.
+You could measure this collector-emitter current somehow with a current sensing resistor, and adjust the base current so that your desired current flows. A micro controller should be just fine for that. Doesn't sound too complicated. Couple of hours probably. Two days tops.
 
-I whipped up pretty much this a few years ago. The abomination I built was mostly improvised. One 2N3055 on a severely under-dimensioned heat sink, an Arduino Nano and a DAC for the base current. No schematic, everything done on the fly and it's a miracle it hasn't gone up in flames yet.
+I'm sure I will not have to eat those words.
+
+I whipped up pretty much this a few years ago. The abomination I built back then was mostly improvised. One 2N3055 on a severely under-dimensioned heat sink, an Arduino Nano and a DAC for the base current. No schematic, everything done on the fly and it's a miracle it hasn't gone up in flames yet.
 
 So there is need for a new one.
+
+It did take a few weeks of work though, which is a few weeks more than I anticipated.
 
 ## References and Thanks
 
