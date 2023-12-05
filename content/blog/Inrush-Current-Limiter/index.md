@@ -66,7 +66,7 @@ The idea is very simple. I'm using a relay to switch the current path from input
 
 # Code
 
-```cpp
+```c
 #include <Arduino.h>
 
 #define LED1 A0

@@ -5,6 +5,7 @@ title = 'Roman Klasen | Projects'
 [hugoVersion]
 extended = true
 
+
 [markup]
 # (Optional) To be able to use all Prism plugins, the theme enables unsafe
 # rendering by default
@@ -14,7 +15,7 @@ extended = true
 # This setting allows inlining <script> and <style> tags in markdown,
 # which is useful and required to use Prism plugins, but may be dangerous
 # if the content isn't trustworthy.
-unsafe = true
+# unsafe = true
 
 [params]
 
@@ -30,7 +31,7 @@ description = "Particle physicist turned software developer."
 email = ""
 
 [params.prism]
-languages = ["cpp", "clike", "python"]
+languages = ["c", "clike", "python"]
 plugins = [
     "normalize-whitespace",
     "toolbar",
