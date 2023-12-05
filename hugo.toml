@@ -2,6 +2,20 @@ baseURL = 'https://romanklasen.com/'
 languageCode = 'en-us'
 title = 'Roman Klasen | Projects'
 
+[hugoVersion]
+extended = true
+
+[markup]
+# (Optional) To be able to use all Prism plugins, the theme enables unsafe
+# rendering by default
+# _merge = "deep"
+[markup.goldmark]
+[markup.goldmark.renderer]
+# This setting allows inlining <script> and <style> tags in markdown,
+# which is useful and required to use Prism plugins, but may be dangerous
+# if the content isn't trustworthy.
+unsafe = true
+
 [params]
 
 # dark or light, defaults to light
@@ -17,16 +31,20 @@ email = ""
 
 [params.prism]
 languages = ["cpp", "clike", "python"]
-plugins = ["normalize-whitespace", "toolbar", "copy-to-clipboard"]
+plugins = [
+    "normalize-whitespace",
+    "toolbar",
+    "copy-to-clipboard",
+    "command-line",
+]
 
-[markup]
-# (Optional) To be able to use all Prism plugins, the theme enables unsafe
-# rendering by default
-#_merge = "deep"
+# disable katex-html
+[params.katex]
+enable = false
 
 [build]
 # The theme enables writeStats which is required for PurgeCSS
-_merge = "deep"
+# _merge = "deep"
 
 [outputs]
 home = ['html']
@@ -39,17 +57,7 @@ term = ['html']
 [module]
 [[module.imports]]
 path = "github.com/schnerring/hugo-theme-gruvbox"
-[[module.imports]]
-path = "github.com/schnerring/hugo-mod-json-resume"
-[[module.imports.mounts]]
-source = "data"
-target = "data"
-[[module.imports.mounts]]
-source = "layouts"
-target = "layouts"
-[[module.imports.mounts]]
-source = "assets/css/json-resume.css"
-target = "assets/css/critical/44-json-resume.css"
+
 [[module.mounts]]
 # required by hugo-mod-json-resume
 source = "node_modules/simple-icons/icons"
@@ -57,6 +65,9 @@ target = "assets/simple-icons"
 [[module.mounts]]
 source = "assets"
 target = "assets"
+[[module.mounts]]
+source = "node_modules/katex"
+target = "assets/katex"
 [[module.mounts]]
 source = "layouts"
 target = "layouts"
@@ -78,12 +89,9 @@ target = "static/fonts"
 [[module.mounts]]
 source = "node_modules/@tabler/icons/icons"
 target = "assets/tabler-icons"
-[[module.mounts]]
-source = "node_modules/katex"
-target = "assets/katex"
 
 [params.tagCloud]
-enable = true
+enable = false
 minFontSizeRem = 0.8
 maxFontSizeRem = 2.0
 

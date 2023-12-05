@@ -35,13 +35,13 @@ $$
 That means two things:
 
 - If you want a low output voltage but large output current, _a lot_ of power ist wasted (dissipated in the transistor)
-- The transformer that supplies the input voltage for this "voltage divider" has to be huge.
+- The transformer that supplies the input voltage for this "voltage divider" has to be huge, because it needs to supply 40 volts at 30 amperes (thats a whopping 1200 watts).
 
 How huge? Well, see for yourself:
 
 ![Internals](external/internal.jpg)
 
-Which leads us to the actual problem I need to solve. The large transformer has a large iron yoke, which results in a large [remanance](https://en.wikipedia.org/wiki/Remanence). This remanence is kind of like stored magnetic energy in the transformer, and unfortunately it doesn't vanish once the transformer is off. When the transformer is switched on later, it may happen at a phase in the AC such that the magnetic field that needs to be built up _now_ is exactly opposed to the remnant magnetic field in the transformer. To overcome that, a large current flows. Much more that a 16 ampere fuse can deliver.
+Which leads us to the actual problem I need to solve. The large transformer has a large iron yoke, which results in a large [remanence](https://en.wikipedia.org/wiki/Remanence). This remanence is kind of like stored magnetic energy in the transformer, and unfortunately it doesn't vanish once the transformer is off. When the transformer is switched on later, it may happen at a phase in the AC such that the magnetic field that needs to be built up _now_ is exactly opposed to the remnant magnetic field in the transformer. To overcome that, a large current flows. Much more that a 16 ampere fuse can deliver.
 
 Which blows my fuses.
 
