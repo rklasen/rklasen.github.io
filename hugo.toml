@@ -76,6 +76,10 @@ title = 'Roman Klasen | Projects'
   [params.katex]
     enable = false
 
+  [params.logo]
+    text = "romanklasen.com"
+    url = "/"
+
 [menu]
   [[menu.main]]
     identifier = "blog"
