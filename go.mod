@@ -1,6 +1,6 @@
 module rklasen.github.io
 
-go 1.25
+go 1.21
 
 require (
 	github.com/schnerring/hugo-mod-json-resume v0.0.0-20231205201058-9af9dad087d3 // indirect

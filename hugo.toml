@@ -62,6 +62,9 @@ title = 'Roman Klasen | Projects'
   [[module.mounts]]
     source = "node_modules/@tabler/icons/icons"
     target = "assets/tabler-icons"
+  [[module.mounts]]
+    source = "node_modules/katex"
+    target = "assets/katex"
 
 [params]
   [params.prism]
