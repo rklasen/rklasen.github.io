@@ -1,0 +1,4 @@
+/* purgecss ignore */
+.katex-html {
+  display: none !important;
+}

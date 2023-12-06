@@ -1,0 +1,4 @@
+/* purgecss ignore */
+body main {
+  grid-template-columns: 1fr minmax(0, 900px) 4fr !important;
+}

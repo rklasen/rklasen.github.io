@@ -1,6 +1,7 @@
 baseURL = 'https://romanklasen.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'en-us'
+title = 'Roman Klasen | Projects'
 
 [outputs]
     home = ['html']
@@ -11,11 +12,12 @@ title = 'My New Hugo Site'
 [markup]
   # (Optional) To be able to use all Prism plugins, the theme enables unsafe
   # rendering by default
-  #_merge = "deep"
+  _merge = "deep"
 
 [build]
   # The theme enables writeStats which is required for PurgeCSS
   _merge = "deep"
+  unsafe = true
 
 # This hopefully will be simpler in the future.
 # See: https://github.com/schnerring/hugo-theme-gruvbox/issues/16
@@ -61,3 +63,16 @@ title = 'My New Hugo Site'
   [[module.mounts]]
     source = "node_modules/@tabler/icons/icons"
     target = "assets/tabler-icons"
+
+[params]
+  [params.prism]
+    languages = ["c", "clike", "python"]
+    plugins = [
+        "normalize-whitespace",
+        "toolbar",
+        "copy-to-clipboard",
+        "command-line",
+    ]
+
+  [params.katex]
+    enable = false
