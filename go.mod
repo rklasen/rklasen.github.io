@@ -1,4 +1,4 @@
-module rklasen.github.com
+module rklasen.github.io
 
 go 1.25
 
