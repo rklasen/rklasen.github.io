@@ -1,5 +1,7 @@
 name: Publish Hugo Site via publish.yml
 
+concurrency: production
+
 on:
   push:
     branches:
@@ -17,6 +19,9 @@ jobs:
   update_hugo_npm_dependencies:
     name: Update Hugo npm Dependencies
     runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: rklasen.github.io
     permissions:
       contents: write
     outputs:
@@ -55,6 +60,9 @@ jobs:
     name: Publish Hugo Site
     needs: update_hugo_npm_dependencies
     runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: rklasen.github.io
     permissions:
       contents: write
     steps:
