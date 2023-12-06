@@ -1,0 +1,88 @@
+name: Publish Hugo Site via publish.yml
+
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      # readme-scribe workflow will trigger the workflow instead
+      - templates/**
+
+  workflow_run:
+    workflows: ["Update Projects Page"]
+    types:
+      - completed
+
+jobs:
+  update_hugo_npm_dependencies:
+    name: Update Hugo npm Dependencies
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    outputs:
+      commit_hash: ${{ steps.commit_changes.outputs.commit_hash }}
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.120.4"
+          extended: true
+
+      - name: Write composite package.json
+        run: hugo mod npm pack
+
+      - name: Install npm Packages
+        run: npm install
+
+      - name: Display Changes
+        run: git status
+
+      - name: Commit Changes
+        id: commit_changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: Update Hugo npm Dependencies
+
+  publish:
+    name: Publish Hugo Site
+    needs: update_hugo_npm_dependencies
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+          ref: ${{ needs.update_hugo_npm_dependencies.outputs.commit_hash }}
+
+      - name: Install Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "18"
+
+      - name: Install Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: "0.120.4"
+          extended: true
+
+      - name: Install npm Packages
+        run: npm ci
+
+      - name: Build Hugo
+        run: hugo --minify
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
