@@ -1,6 +1,5 @@
 baseURL = 'https://romanklasen.com/'
 languageCode = 'en-us'
-languageCode = 'en-us'
 title = 'Roman Klasen | Projects'
 
 [outputs]
@@ -76,3 +75,22 @@ title = 'Roman Klasen | Projects'
 
   [params.katex]
     enable = false
+
+[menu]
+  [[menu.main]]
+    identifier = "blog"
+    name = "Blog"
+    url = "/blog"
+    weight = 10
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about"
+    weight = 40
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    weight = 10
+  [languages.en.params.jsonResume]
+    present = "present"
