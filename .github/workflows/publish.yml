@@ -1,33 +1,19 @@
-# Sample workflow for building and deploying a Hugo site to GitHub Pages
-name: Deploy New Hugo site to Pages
+name: Publish Hugo Site
 
 on:
-  # Runs on pushes targeting the default branch
   push:
-    branches: ["master"]
+    branches:
+      - master
+    paths-ignore:
+      # readme-scribe workflow will trigger the workflow instead
+      - templates/**
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
-# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
-
-# Default to bash
-defaults:
-  run:
-    shell: bash
+  workflow_run:
+    workflows: ["Update Projects Page"]
+    types:
+      - completed
 
 jobs:
-  # Build job
   update_hugo_npm_dependencies:
     name: Update Hugo npm Dependencies
     runs-on: ubuntu-latest
@@ -65,7 +51,6 @@ jobs:
         with:
           commit_message: Update Hugo npm Dependencies
 
-  # Deployment job
   publish:
     name: Publish Hugo Site
     needs: update_hugo_npm_dependencies
@@ -87,7 +72,7 @@ jobs:
       - name: Install Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: "0.111.3"
+          hugo-version: "0.120.4"
           extended: true
 
       - name: Install npm Packages
