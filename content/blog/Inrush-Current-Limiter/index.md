@@ -53,7 +53,7 @@ Big thanks go out to the [post apocalyptic inventor](https://www.youtube.com/@Th
 
 # Design
 
-The idea is very simple. I'm using a relay to switch the current path from input AC to output AC either through the current limiting resistors, or directly without resistors. The relay is controlled by a micro controller, which simply switches after a few hundred milliseconds. If you thing this is a massive overkill and waste of compute capability, you are probably right. But: it is easy. And this thing won't be mass produced by the millions, I only need one of them. So at some point, easy and working but slight overkill is preferable to the ideal, most perfect solution, that takes longer to implement.
+The idea is very simple. I'm using a relay to switch the current path from input AC to output AC either through the current limiting resistors, or directly without resistors. The relay is controlled by a micro controller, which simply switches the relay off after a few hundred milliseconds. If you think this is a massive overkill and waste of compute capability, you are probably right. But: it is easy. And this thing won't be mass produced by the millions, I only need one of them. So at some point, easy and working but slight overkill is preferable to the ideal, most perfect solution, that takes longer to implement.
 
 # Images
 
