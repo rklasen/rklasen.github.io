@@ -2,6 +2,8 @@ baseURL = 'https://romanklasen.com/'
 languageCode = 'en-us'
 title = 'Roman Klasen | Projects'
 
+timeout = "180s"
+
 [outputs]
     home = ['html']
     section = ['html']
@@ -101,5 +103,3 @@ title = 'Roman Klasen | Projects'
     weight = 10
   [languages.en.params.jsonResume]
     present = "present"
-
-timeout = 600000
