@@ -28,9 +28,9 @@ The idea is quite simple:
 
 - Setup the antenna to be measured (i.e. the DUT) and the NanoVNA with it's antenna some distance apart
 - Use a NanoVNA to measure the S12 parameter of the antenna
-- by using a 5m SMA extension cable, the NanoVNA can be placed in the "far" field of the antenna
-- and rotating the antenna around it's axis, the relative strength of the signal can be measured
-- this giving the radiation pattern of the antenna
+  - by using a 5m SMA extension cable, the NanoVNA can be placed in the "far" field of the antenna
+  - and rotating the antenna around it's axis, the relative strength of the signal can be measured
+- Thus giving the radiation pattern of the antenna
 
 ## Initial Calibration
 
@@ -88,8 +88,6 @@ They did not.
 ![Spreadsheet](img/spreadsheet.png)
 
 ## Use Jupyter, matplotlib and pandas to plot this
-
-Also goat:
 
 Seriously one of the most useful tools in my toolbox.
 
