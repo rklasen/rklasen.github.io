@@ -17,6 +17,6 @@ You can reach me at mail [at] romanklasen [dot] de. Pls no spam 😔
 
 This website is powered by [Hugo](https://gohugo.io/) and [Michael Schnerrings](https://schnerring.net) amazing [Grubbox Theme](https://github.com/schnerring/hugo-theme-gruvbox).
 
-Let's see if the build passes:
+## Hosted on GitHub Pages
 
 [![Deploy Hugo site to Pages](https://github.com/rklasen/rklasen.github.io/actions/workflows/hugo.yml/badge.svg)](https://github.com/rklasen/rklasen.github.io/actions/workflows/hugo.yml)
