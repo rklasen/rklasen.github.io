@@ -101,3 +101,5 @@ title = 'Roman Klasen | Projects'
     weight = 10
   [languages.en.params.jsonResume]
     present = "present"
+
+timeout = 600000
