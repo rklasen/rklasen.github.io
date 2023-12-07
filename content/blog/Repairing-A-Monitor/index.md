@@ -14,7 +14,7 @@ cover:
 
 Every so often I obtain through some means a broken monitor. This time, my brother in law gave me one to repair. I don't even remember the exact model, so let's just use this image from Wikipedia, credit to [Uwe Aranas](https://en.wikipedia.org/wiki/File:Monitor-Eizo-CG277-BK-27inches-01.jpg):
 
-![Monitor](https://upload.wikimedia.org/wikipedia/commons/b/b1/Monitor-Eizo-CG277-BK-27inches-01.jpg)
+![Monitor](img/monitor-wikipedia.jpg)
 
 The exact model doesn't even matter, because this seems to be a common issue. And because it's such a common occurrence, maybe this blog post will help somebody repair their own monitor.
 
