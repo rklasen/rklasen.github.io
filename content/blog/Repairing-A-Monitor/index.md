@@ -3,11 +3,11 @@ title: "Repairing a Monitor"
 date: 2023-12-07T10:12:07+01:00
 summary: "Sometimes, repairs can be satisfyingly easy."
 draft: false
-tags: []
+tags: [electronics]
 toc: true
 cover:
   src: img/cover-pcb.jpg
-  caption: Something is broken here...
+  caption: "Something is broken here..."
 ---
 
 # Preamble
